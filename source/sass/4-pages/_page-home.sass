@@ -29,12 +29,27 @@ header
         background-image: url("../img/table-1.jpg")
     .premium
         background-image: url("../img/table-2.jpg")
-    .clients
+        p 
+            font-size: 18px
+            font-weight: 500
+            margin: 10px 0
+        .btn
+            padding: 10px 20px
+            font-weight: 500
+        .btn:hover
+            color: #00a8ff
+    .hours
         background-image: url("../img/table-3.jpg")
+        p
+            margin-bottom: 5px
+        .hours-body 
+            position: relative
+            top: 60px
     .card-title
-        font-size: 20px
-        font-weight: 600
-    .schedule-table
+        font-size: 20px!important
+        font-weight: 600!important
+        margin: 0 0 20px!important
+    .hero-table
         position: relative
         top: 80px
     .schedule-times
@@ -42,4 +57,140 @@ header
         p
             font-size: 17px
             margin: 10px 0
-    
+
+
+.subtitle
+    color: #989da0
+    font-size: 24px
+
+    // Services Section
+#services
+    margin: 100px 0
+    .service-cards
+        margin-top: 100px
+    .service
+        padding: 25px
+        border: 1px solid #ddd
+        transition: all 0.5s ease
+        p 
+            font-size: 16px
+            color: #989da0
+            margin-top: 24px
+    .service:hover
+        border-color: #00a8ff
+        .icon-holder
+            top: -50px
+    .icon-holder
+        display: inline-block
+        position: relative
+        padding: 10px
+        top: -50px
+        width: 60px
+        height: 60px
+        background: #fff 
+        img
+            width: 100%
+
+    // Team Section
+#team
+    margin: 150px 0
+    .team-card
+        margin-top: 80px
+    .card
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3)
+        border: 0
+        .card-img-top
+            height: 250px
+        .overlay
+            position: absolute
+            width: 100%
+            height: 250px
+            background: rgba(0, 168, 255, 0.7)
+            z-index: 3
+            padding: 60px
+            opacity: 0
+            transition: opacity .8s ease-in-out
+            h3
+                color: #fff
+            p
+                color: #b1b6b9
+                font-size: 18px
+    .card:hover
+        .overlay
+            opacity: 1
+    .card-body
+        text-align: center
+        margin-top: -60px
+        a
+            text-decoration: none
+        .button
+            background-color: #fff
+            border: 1.2px solid #31B9FF
+            padding: 20px
+            color: #31B9FF
+        .button:hover
+            background-color: #31B9FF
+            color: #fff
+    .rounded-cricle
+        border-radius: 50%
+        max-width: 120px
+        margin: 0 auto
+        position: relative
+        top: -60px
+        z-index: 4
+
+// Pricing Section
+#pricing
+    background: url('../img/pricing1.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    padding: 100px 0
+    h2, h4, p
+        color: #fff
+    h4
+        font-size: 34px
+    p
+        font-size: 20px
+    .pricing-text
+        margin: 20px 0 60px 0
+    .button
+        color: #fff
+        border: 1px solid #fff
+        background: transparent
+        padding: 16px 20px
+    .button:hover
+        color: #31b9ff
+        background: #fff
+    .blue-price
+        background-color: #31B9FF
+        margin-left: auto
+        padding: 40px
+        ul
+            list-style: none
+            padding: 0
+            li
+                font-size: 18px
+                color: #fff
+                margin: 10px 0
+            li:before
+                content: ''
+                position: relative
+                top: -3px
+                display: inline-block
+                width: 5px
+                height: 5px
+                margin-right: 15px
+                background: #ffffff     
+    .gray-price
+        background-color: #BBBBBB
+        margin-left: auto
+        padding: 40px
+        
+footer
+    background: url(../img/footer.jpg)
+    p
+        margin: 0
+        padding: 80px 0
+        color: #ffffff
+        font-size: 24px
+        font-weight: 500

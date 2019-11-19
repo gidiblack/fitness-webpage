@@ -214,7 +214,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  padding: 20px 60px;
+  padding: 20px 40px;
   color: black;
   text-align: center;
   font-size: 14px;
@@ -222,7 +222,7 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #3366FF;
+  background-color: #31B9FF;
   border-radius: 4px;
   cursor: pointer;
   box-sizing: border-box;
@@ -347,8 +347,6 @@ hr {
     font-weight: 700;
     text-transform: uppercase;
     transition: all 0.2s ease; }
-    .main-nav a .navlinks.cta {
-      background: #3366FF; }
 
 header {
   background: url("../img/header.jpg") no-repeat;
@@ -381,12 +379,27 @@ header {
     background-image: url("../img/table-1.jpg"); }
   .hero-cards .premium {
     background-image: url("../img/table-2.jpg"); }
-  .hero-cards .clients {
+    .hero-cards .premium p {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 10px 0; }
+    .hero-cards .premium .btn {
+      padding: 10px 20px;
+      font-weight: 500; }
+    .hero-cards .premium .btn:hover {
+      color: #00a8ff; }
+  .hero-cards .hours {
     background-image: url("../img/table-3.jpg"); }
+    .hero-cards .hours p {
+      margin-bottom: 5px; }
+    .hero-cards .hours .hours-body {
+      position: relative;
+      top: 60px; }
   .hero-cards .card-title {
-    font-size: 20px;
-    font-weight: 600; }
-  .hero-cards .schedule-table {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    margin: 0 0 20px !important; }
+  .hero-cards .hero-table {
     position: relative;
     top: 80px; }
   .hero-cards .schedule-times {
@@ -394,3 +407,135 @@ header {
     .hero-cards .schedule-times p {
       font-size: 17px;
       margin: 10px 0; }
+
+.subtitle {
+  color: #989da0;
+  font-size: 24px; }
+
+#services {
+  margin: 100px 0; }
+  #services .service-cards {
+    margin-top: 100px; }
+  #services .service {
+    padding: 25px;
+    border: 1px solid #ddd;
+    transition: all 0.5s ease; }
+    #services .service p {
+      font-size: 16px;
+      color: #989da0;
+      margin-top: 24px; }
+  #services .service:hover {
+    border-color: #00a8ff; }
+    #services .service:hover .icon-holder {
+      top: -50px; }
+  #services .icon-holder {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    top: -50px;
+    width: 60px;
+    height: 60px;
+    background: #fff; }
+    #services .icon-holder img {
+      width: 100%; }
+
+#team {
+  margin: 150px 0; }
+  #team .team-card {
+    margin-top: 80px; }
+  #team .card {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    border: 0; }
+    #team .card .card-img-top {
+      height: 250px; }
+    #team .card .overlay {
+      position: absolute;
+      width: 100%;
+      height: 250px;
+      background: rgba(0, 168, 255, 0.7);
+      z-index: 3;
+      padding: 60px;
+      opacity: 0;
+      transition: opacity .8s ease-in-out; }
+      #team .card .overlay h3 {
+        color: #fff; }
+      #team .card .overlay p {
+        color: #b1b6b9;
+        font-size: 18px; }
+  #team .card:hover .overlay {
+    opacity: 1; }
+  #team .card-body {
+    text-align: center;
+    margin-top: -60px; }
+    #team .card-body a {
+      text-decoration: none; }
+    #team .card-body .button {
+      background-color: #fff;
+      border: 1.2px solid #31B9FF;
+      padding: 20px;
+      color: #31B9FF; }
+    #team .card-body .button:hover {
+      background-color: #31B9FF;
+      color: #fff; }
+  #team .rounded-cricle {
+    border-radius: 50%;
+    max-width: 120px;
+    margin: 0 auto;
+    position: relative;
+    top: -60px;
+    z-index: 4; }
+
+#pricing {
+  background: url("../img/pricing1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0; }
+  #pricing h2, #pricing h4, #pricing p {
+    color: #fff; }
+  #pricing h4 {
+    font-size: 34px; }
+  #pricing p {
+    font-size: 20px; }
+  #pricing .pricing-text {
+    margin: 20px 0 60px 0; }
+  #pricing .button {
+    color: #fff;
+    border: 1px solid #fff;
+    background: transparent;
+    padding: 16px 20px; }
+  #pricing .button:hover {
+    color: #31b9ff;
+    background: #fff; }
+  #pricing .blue-price {
+    background-color: #31B9FF;
+    margin-left: auto;
+    padding: 40px; }
+    #pricing .blue-price ul {
+      list-style: none;
+      padding: 0; }
+      #pricing .blue-price ul li {
+        font-size: 18px;
+        color: #fff;
+        margin: 10px 0; }
+      #pricing .blue-price ul li:before {
+        content: '';
+        position: relative;
+        top: -3px;
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        margin-right: 15px;
+        background: #ffffff; }
+  #pricing .gray-price {
+    background-color: #BBBBBB;
+    margin-left: auto;
+    padding: 40px; }
+
+footer {
+  background: url(../img/footer.jpg); }
+  footer p {
+    margin: 0;
+    padding: 80px 0;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500; }

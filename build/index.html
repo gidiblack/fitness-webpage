@@ -20,7 +20,7 @@
                     <li><a href="#" class="nav-links">Services</a></li>
                     <li><a href="#" class="nav-links">Team</a></li>
                     <li><a href="#" class="nav-links">Pricing</a></li>
-                    <li><a href="#" class="nav-links button">Sign up</a></li>
+                    <li><a href="#" class="nav-links cta button">Sign up</a></li>
                 </ul>
             </div>
         </nav>
@@ -37,7 +37,7 @@
                 <div class="col-md-4">
                     <div class="hero-card schedule">
                         <p class="card-title">Today's Schedule</p>
-                        <div class="schedule-table">
+                        <div class="hero-table">
                             <div class="schedule-times row">
                                 <div class="col-sm-6">
                                     <p>Early Exercise</p> 
@@ -68,61 +68,158 @@
                 <div class="col-md-4">
                     <div class="hero-card premium">
                         <p class="card-title">Premium Membership</p>
-                        <div>
+                        <div class="hero-table">
                             <p>Register Today</p>
                             <p>Get 20% Discount</p>
-                            <button class="btn btn-primary">Register</button>
+                            <a class="btn btn-outline-light" href="#">REGISTER</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="hero-card clients">
-                        <p class="card-title">Happy clients</p>
+                    <div class="hero-card hours">
+                        <p class="card-title">Opening Hours</p>
+                        <div class="hours-body">
+                            <p>Mon - Fri</p>
+                            <p class="lead">08:00 - 20:00</p>
+                            <p>Sat - Sun</p>
+                            <p class="lead">10:00 - 19:00</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="services">
+    <section id="services">
         <div class="container">
-            <h2>Services</h2>
-            <p>Achieve the best results with our wide variety of training options!</p>
-            <div class="row">
-                <div class="cardio-training col-md-4">
-                    <h3>Cardio training</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ducimus temporibus id reprehenderit necessitatibus dolor provident odio obcaecati numquam quaerat!</p>
+            <h2 class="text-center">Services</h2>
+            <p class="subtitle text-center">Achieve the best results with our wide variety of training options!</p>
+            <div class="row service-cards">
+                <div class="col-md-4">
+                    <div class="service text-center">
+                        <div class="icon-holder">
+                            <img src="./assets/img/heart-blue.png" alt="cardio">
+                        </div>
+                        <h3>Cardio training</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ducimus temporibus id reprehenderit necessitatibus dolor provident odio obcaecati numquam quaerat!</p>
+                    </div>
                 </div>
-                <div class="yoga col-md-4">
-                    <h3>Yoga Pilates</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ducimus temporibus id reprehenderit necessitatibus dolor provident odio obcaecati numquam quaerat!</p>
+                <div class="col-md-4">
+                    <div class="service text-center">
+                        <div class="icon-holder">
+                            <img src="./assets/img/guru-blue.png" alt="yoga">
+                        </div>
+                        <h3>Yoga Pilates</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ducimus temporibus id reprehenderit necessitatibus dolor provident odio obcaecati numquam quaerat!</p>
+                    </div>
                 </div>
-                <div class="power-training col-md-4">
-                    <h3>Power training</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ducimus temporibus id reprehenderit necessitatibus dolor provident odio obcaecati numquam quaerat!</p>
+                <div class="col-md-4">
+                    <div class="service text-center">
+                        <div class="icon-holder">
+                            <img src="./assets/img/weight-blue.png" alt="power-training">
+                        </div>
+                        <h3>Power training</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ducimus temporibus id reprehenderit necessitatibus dolor provident odio obcaecati numquam quaerat!</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="team">
+    
+    <section id="team">
         <div class="container">
-            <h2>Team</h2>
-            <p>We're a dream team!</p>
+            <h2 class="text-center">Team</h2>
+            <p class="text-center subtitle">We're a dream team!</p>
             <div class="row">
                 <div class="team-card col-md-4">
-                    <h3>Ben</h3>
-                    <p>Personal Trainer</p>
+                    <div class="card">
+                        <img src="./assets/img/team-cover1.jpg" class="card-img-top" alt="Personal-training">
+                        <div class="overlay text-center">
+                            <h3>N15,000</h3>
+                            <p>1-7 sessions / month</p>
+                        </div>
+                        <img src="./assets/img/team3.jpg" class="rounded-cricle" alt="Ben">
+                        <div class="card-body">
+                            <h3 class="card-title">Ben</h3>
+                            <p class="card-text subtitle">Personal Trainer</p>
+                            <a href="#" class="button">Sign Up Now</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="team-card col-md-4">
-                    <h3>Anette</h3>
-                    <p>Fitness Instructor</p>
+                    <div class="card">
+                        <img src="./assets/img/team-cover2.jpg" class="card-img-top" alt="Personal-training">
+                        <div class="overlay text-center">
+                            <h3>N12,000</h3>
+                            <p>1-5 sessions / month</p>
+                        </div>
+                        <img src="./assets/img/team1.jpg" class="rounded-cricle" alt="Ben">
+                        <div class="card-body">
+                            <h3 class="card-title">Anette</h3>
+                            <p class="card-text subtitle">Fitness Instructor</p>
+                            <a href="#" class="button">Sign Up Now</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="team-card col-md-4">
-                    <h3>Mark</h3>
-                    <p>Personal Trainer</p>
+                    <div class="card">
+                        <img src="./assets/img/team-cover3.jpg" class="card-img-top" alt="Personal-training">
+                        <div class="overlay text-center">
+                            <h3>N15,000</h3>
+                            <p>1-7 sessions / month</p>
+                        </div>
+                        <img src="./assets/img/team2.jpg" class="rounded-cricle" alt="Ben">
+                        <div class="card-body">
+                            <h3 class="card-title">Mark</h3>
+                            <p class="card-text subtitle">Personal Trainer</p>
+                            <a href="#" class="button">Sign Up Now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="pricing">
+        <div class="container">
+            <div class="pricing-text text-center">
+                <h2>Pricing</h2>
+                <p class="subtitle">Choose your favorite pricing plan and sign up today!</p>
+            </div>
+            <div class="row">
+                <div class="col-md-7 blue-price">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <h4>Yoga Pilates</h4>
+                            <p>N150,000 / year</p>
+                            <button class="button">Sign Up Now</button>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>One Personal Trainer</li>
+                                <li>Big Gym space for training</li>
+                                <li>Free tools and props</li>
+                                <li>Free locker</li>
+                                <li>Free showers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3.5 gray-price text-center">
+                    <h4>Cardio Training</h4>
+                    <p>N100,000 / year</p>
+                    <button class="button">Sign Up Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="text-center">&copy Gidiblack 2019</p>
+        </div>
+    </footer>
 </body>
 <script src="./assets/js/vendors.js"></script>
 <script src="./assets/js/app.js"></script>
