@@ -1,10 +1,8 @@
+$(document).ready(function(){
+    $(".button, .close").click(function(){
+        $("#signUpModal").fadeToggle('slow', 'linear');
+        $("body").toggleClass('show');
+    });
 
-// JavaScript
-window.sr = ScrollReveal(); 
 
-// sr.reveal('h1', {
-//     delay: 0,
-//     duration: 200,
-//     origin: 'bottom',
-//     distance: '100px' 
-// });
+});

@@ -20,7 +20,7 @@
                     <li><a href="#" class="nav-links">Services</a></li>
                     <li><a href="#" class="nav-links">Team</a></li>
                     <li><a href="#" class="nav-links">Pricing</a></li>
-                    <li><a href="#" class="nav-links cta button">Sign up</a></li>
+                    <li><a class="nav-links cta button">Sign up</a></li>
                 </ul>
             </div>
         </nav>
@@ -71,7 +71,7 @@
                         <div class="hero-table">
                             <p>Register Today</p>
                             <p>Get 20% Discount</p>
-                            <a class="btn btn-outline-light" href="#">REGISTER</a>
+                            <a class="button btn">REGISTER</a>
                         </div>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Ben</h3>
                             <p class="card-text subtitle">Personal Trainer</p>
-                            <a href="#" class="button">Sign Up Now</a>
+                            <a class="button">Sign Up Now</a>
                         </div>
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Anette</h3>
                             <p class="card-text subtitle">Fitness Instructor</p>
-                            <a href="#" class="button">Sign Up Now</a>
+                            <a class="button">Sign Up Now</a>
                         </div>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Mark</h3>
                             <p class="card-text subtitle">Personal Trainer</p>
-                            <a href="#" class="button">Sign Up Now</a>
+                            <a class="button">Sign Up Now</a>
                         </div>
                     </div>
                 </div>
@@ -209,12 +209,53 @@
                 <div class="col-md-3.5 gray-price text-center">
                     <h4>Cardio Training</h4>
                     <p>N100,000 / year</p>
-                    <button class="button">Sign Up Now</button>
+                    <button type="button" class="button" data-toggle="pop-up" data-target="signUpModal" onclick="popUp()">Sign Up Now</button>
                 </div>
             </div>
         </div>
     </section>
-
+      
+      <!-- Modal -->
+      <div class="pop-up" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalTitle" aria-hidden="true">
+        <div class="pop-up-dialog" role="document">
+          <div class="pop-up-content text-center">
+            <div class="pop-up-header">
+                <button type="button" class="close" data-dismiss="pop-up" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="pop-up-title" id="signUpModalTitle">Sign Up</h4>
+            </div>
+            <div class="pop-up-body">
+              <form class="pop-up-form">
+                  <fieldset class="form-group">
+                      <input type="text" class="form-input form-white" placeholder="Full Name" id="fullNameInput" required>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <input type="email" class="form-input form-white" placeholder="Email Address" id="emailInput" required>
+                  </fieldset>
+                  <fieldset class="form-group">
+                    <label for="pricing-plan" class="form-label">Choose Pricing plan</label>
+                    <select name="pricing-plan" id="pricingPlanInput" class="form-input form-white" placeholder="Choose Pricing Plan">
+                        <option value="1 month membership">1 month membership / N 18,000</option>
+                        <option value="3 month membership" selected>3 month membership / N 50,000</option>
+                        <option value="1 year membership">1 year membership / N180,000</option>
+                        <option value="Free trial">Free Trial Class</option>
+                    </select>
+                  </fieldset>
+                  <fieldset class="form-group">
+                    <div class="check-field">
+                        <input type="checkbox" id="agreeTerms" name="agreeTerms" value="agreeTerms">
+                        <span>I Agree to the <a href="#">Terms & Conditions</a></span>
+                    </div>
+                  </fieldset>
+                  <fieldset class="form-group">
+                      <button type="submit" class="btn">Sign Up</button>
+                  </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     <footer>
         <div class="container">
             <p class="text-center">&copy Gidiblack 2019</p>
