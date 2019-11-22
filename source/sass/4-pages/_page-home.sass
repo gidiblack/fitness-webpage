@@ -2,11 +2,14 @@ header
     background: url("../img/header.jpg") no-repeat
     background-size: cover
     background-position: center
-    height: 100vh 
+    height: 100vh
+    position: relative
     .home-hero
         text-align: center
-        position: relative
-        top: 50px
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        -webkit-transform: translateY(-50%)
         color: #fff
         p
             font-size: 30px

@@ -190,6 +190,7 @@ html {
   box-sizing: inherit; }
 
 body {
+  position: relative;
   font-size: 14px;
   line-height: 1.6;
   font-size: 14px;
@@ -329,9 +330,27 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
+.nav-bar {
+  position: fixed; }
+
+.scrolled {
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  z-index: 50;
+  transition: all .5s; }
+  .scrolled a {
+    margin: 12px 0 !important; }
+  .scrolled a.nav-links {
+    color: #998b8b; }
+  .scrolled a.logo {
+    background: url("../img/logo-active.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important; }
+
 .main-nav {
   display: flex;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
   .main-nav li {
     list-style: none;
     margin: auto 0; }
@@ -342,11 +361,21 @@ hr {
     display: block;
     border-radius: 4px;
     padding: 10px 40px;
-    margin: 40px 0;
+    margin: 20px 0;
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
     transition: all 0.2s ease; }
+  .main-nav a:hover {
+    color: #31B9FF; }
+  .main-nav a.button, .main-nav a.button:hover {
+    color: #fff; }
+  .main-nav a.logo {
+    background: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    border-radius: 0; }
 
 .pop-up {
   position: fixed;
@@ -475,11 +504,14 @@ header {
   background: url("../img/header.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
   header .home-hero {
     text-align: center;
-    position: relative;
-    top: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     color: #fff; }
     header .home-hero p {
       font-size: 30px; }
