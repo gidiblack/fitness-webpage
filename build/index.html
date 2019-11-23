@@ -9,17 +9,17 @@
     <title>Fitness Hub</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav class="nav-bar container-fluid" id="nav-bar">
             <div class="container">
                 <ul class="main-nav">
                     <li><a href="#" class="nav-links logo">
                     </a></li>
                     <div id="responsive-nav" class="responsive-nav">
-                        <li><a href="#" class="nav-links">Home</a></li>
-                        <li><a href="#" class="nav-links">Services</a></li>
-                        <li><a href="#" class="nav-links">Team</a></li>
-                        <li><a href="#" class="nav-links">Pricing</a></li>
+                        <li class="active"><a href="#header" class="nav-links">Home</a></li>
+                        <li><a href="#services" class="nav-links">Services</a></li>
+                        <li><a href="#team" class="nav-links">Team</a></li>
+                        <li><a href="#pricing" class="nav-links">Pricing</a></li>
                         <li><a class="nav-links btn button">Sign up</a></li>
                     </div>
                     <li class="menu-toggle">
@@ -30,12 +30,12 @@
         </nav>
         <div class="home-hero container-fluid">
             <p>Take care of your body</p>
-            <span>Its the only place you have to live.</span>
+            <span class="typed">Its the only place you have to live.</span><span class="typed-cursor">|</span>
         </div>
         <div class="container">
         </div>
     </header>
-    <section id="hero">
+    <section id="hero" class="scrollspy">
         <div class="container">
             <div class="hero-cards row">
                 <div class="col-md-4">
@@ -93,7 +93,7 @@
             </div>
         </div>
     </section>
-    <section id="services">
+    <section id="services" class="scrollspy">
         <div class="container">
             <h2 class="text-center">Services</h2>
             <p class="subtitle text-center">Achieve the best results with our wide variety of training options!</p>
@@ -129,7 +129,7 @@
         </div>
     </section>
     
-    <section id="team">
+    <section id="team" class="scrollspy">
         <div class="container">
             <h2 class="text-center">Team</h2>
             <p class="text-center subtitle">We're a dream team!</p>
@@ -183,7 +183,7 @@
         </div>
     </section>
 
-    <section id="pricing">
+    <section id="pricing" class="scrollspy">
         <div class="container">
             <div class="pricing-text text-center">
                 <h2>Pricing</h2>
