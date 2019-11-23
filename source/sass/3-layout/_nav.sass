@@ -1,10 +1,11 @@
 .nav-bar
     position: fixed
+    z-index: 10
     
 .scrolled
     background-color: #fff
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3)
-    z-index: 50
+    z-index: 20
     transition: all .5s
     a
         margin: 12px 0!important
@@ -14,6 +15,8 @@
         background: url("../img/logo-active.png")!important
         background-repeat: no-repeat!important
         background-size: contain!important
+    .hamburger, .hamburger::before, .hamburger::after 
+        background: #6c6161
 
 .main-nav
     display: flex
@@ -44,3 +47,72 @@
         background-size: contain
         height: 50px
         border-radius: 0 
+
+.responsive-nav
+    display: flex
+
+
+/* CSS hamburger menu */
+.menu-toggle 
+    padding: 1em 0
+    position: relative
+    cursor: pointer
+    z-index: 6
+    display: none
+
+
+.hamburger, .hamburger::before, .hamburger::after 
+    content: ""
+    display: block
+    background: #d7c6c6
+    height: 3px
+    width: 1.8rem
+    border-radius: 3px
+    transition: all ease-in-out 500ms
+
+.hamburger::before 
+    transform: translateY(-8px)
+
+.hamburger::after 
+    transform: translateY(5px) 
+
+
+/* X button with CSS */
+.close-menu .hamburger 
+    transform: rotate(45deg)
+    background: #6c6161
+
+.close-menu .hamburger::after
+    transform: translateY(-3px) rotate(-90deg)
+    background: #6c6161
+
+.close-menu .hamburger::before
+    opacity: 0
+
+@media screen and (max-width: 768px)
+    .responsive-nav
+        display: none
+    .menu-toggle
+        display: block
+
+    .responsive-nav.unfold
+        display: block
+        width: 100%
+        background: #fff
+        position: absolute
+        top: 0
+        right: 0
+        overflow-x: hidden
+        overflow-y: auto
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3)
+        li
+            display: block
+        a
+            display: block
+            text-align: center
+            padding: 20px
+        a.nav-links
+            color: #998b8b
+        a.nav-links.btn
+            margin: 16px 50px!important
+            color: #fff 

@@ -331,12 +331,13 @@ hr {
   height: 0; }
 
 .nav-bar {
-  position: fixed; }
+  position: fixed;
+  z-index: 10; }
 
 .scrolled {
   background-color: #fff;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-  z-index: 50;
+  z-index: 20;
   transition: all .5s; }
   .scrolled a {
     margin: 12px 0 !important; }
@@ -346,6 +347,8 @@ hr {
     background: url("../img/logo-active.png") !important;
     background-repeat: no-repeat !important;
     background-size: contain !important; }
+  .scrolled .hamburger, .scrolled .hamburger::before, .scrolled .hamburger::after {
+    background: #6c6161; }
 
 .main-nav {
   display: flex;
@@ -377,6 +380,71 @@ hr {
     height: 50px;
     border-radius: 0; }
 
+.responsive-nav {
+  display: flex; }
+
+/* CSS hamburger menu */
+.menu-toggle {
+  padding: 1em 0;
+  position: relative;
+  cursor: pointer;
+  z-index: 6;
+  display: none; }
+
+.hamburger, .hamburger::before, .hamburger::after {
+  content: "";
+  display: block;
+  background: #d7c6c6;
+  height: 3px;
+  width: 1.8rem;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms; }
+
+.hamburger::before {
+  transform: translateY(-8px); }
+
+.hamburger::after {
+  transform: translateY(5px); }
+
+/* X button with CSS */
+.close-menu .hamburger {
+  transform: rotate(45deg);
+  background: #6c6161; }
+
+.close-menu .hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+  background: #6c6161; }
+
+.close-menu .hamburger::before {
+  opacity: 0; }
+
+@media screen and (max-width: 768px) {
+  .responsive-nav {
+    display: none; }
+  .menu-toggle {
+    display: block; }
+  .responsive-nav.unfold {
+    display: block;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); }
+    .responsive-nav.unfold li {
+      display: block; }
+    .responsive-nav.unfold a {
+      display: block;
+      text-align: center;
+      padding: 20px; }
+    .responsive-nav.unfold a.nav-links {
+      color: #998b8b; }
+    .responsive-nav.unfold a.nav-links.btn {
+      margin: 16px 50px !important;
+      color: #fff; } }
+
 .pop-up {
   position: fixed;
   top: 0;
@@ -398,7 +466,7 @@ hr {
 .pop-up-dialog {
   position: relative;
   width: auto;
-  margin: .5rem;
+  margin: 1rem;
   pointer-events: none; }
 
 .pop-up-content {
@@ -435,6 +503,9 @@ hr {
   margin: 0 auto; }
   .pop-up-form .form-input {
     margin: 20px 0; }
+  @media screen and (max-width: 576px) {
+    .pop-up-form {
+      width: 100%; } }
 
 .pop-up-body .btn {
   width: 100%;
@@ -449,7 +520,7 @@ hr {
 .form-group {
   margin: 0;
   border: 0;
-  padding: 10px 24px; }
+  padding: 12px; }
   .form-group input[type="checkbox"] {
     width: 30px;
     height: 30px;
@@ -508,16 +579,27 @@ header {
   position: relative; }
   header .home-hero {
     text-align: center;
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    color: #fff; }
+    color: #fff;
+    z-index: 5; }
     header .home-hero p {
       font-size: 30px; }
     header .home-hero span {
       font-size: 50px;
       font-weight: 700; }
+    @media screen and (max-width: 768px) {
+      header .home-hero p {
+        font-size: 24px; }
+      header .home-hero span {
+        font-size: 40px; } }
+    @media screen and (max-width: 576px) {
+      header .home-hero p {
+        font-size: 20px; }
+      header .home-hero span {
+        font-size: 34px; } }
 
 .hero-cards {
   position: relative;
@@ -558,7 +640,7 @@ header {
     margin: 0 0 20px !important; }
   .hero-cards .hero-table {
     position: relative;
-    top: 80px; }
+    top: 32%; }
   .hero-cards .schedule-times {
     border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
     .hero-cards .schedule-times p {
@@ -568,6 +650,9 @@ header {
 .subtitle {
   color: #989da0;
   font-size: 24px; }
+  @media screen and (max-width: 680px) {
+    .subtitle {
+      font-size: 21px; } }
 
 #services {
   margin: 100px 0; }
@@ -575,6 +660,7 @@ header {
     margin-top: 100px; }
   #services .service {
     padding: 25px;
+    margin: 24px 0;
     border: 1px solid #ddd;
     transition: all 0.5s ease; }
     #services .service p {
@@ -623,7 +709,8 @@ header {
     opacity: 1; }
   #team .card-body {
     text-align: center;
-    margin-top: -60px; }
+    margin-bottom: 24px;
+    padding: 0; }
     #team .card-body a {
       text-decoration: none; }
     #team .card-body .button {
@@ -652,7 +739,7 @@ header {
   #pricing h4 {
     font-size: 34px; }
   #pricing p {
-    font-size: 20px; }
+    font-size: 22px; }
   #pricing .pricing-text {
     margin: 20px 0 60px 0; }
   #pricing .button {
@@ -687,6 +774,11 @@ header {
     background-color: #BBBBBB;
     margin-left: auto;
     padding: 40px; }
+  @media screen and (max-width: 768px) {
+    #pricing {
+      padding: 80px 0; }
+      #pricing p {
+        font-size: 18px; } }
 
 footer {
   background: url(../img/footer.jpg); }

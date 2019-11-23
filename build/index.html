@@ -14,13 +14,17 @@
             <div class="container">
                 <ul class="main-nav">
                     <li><a href="#" class="nav-links logo">
-                        <!-- <img src="./assets/img/logo.png" alt="fitness-hub-logo"> -->
                     </a></li>
-                    <li><a href="#" class="nav-links">Home</a></li>
-                    <li><a href="#" class="nav-links">Services</a></li>
-                    <li><a href="#" class="nav-links">Team</a></li>
-                    <li><a href="#" class="nav-links">Pricing</a></li>
-                    <li><a class="nav-links btn button">Sign up</a></li>
+                    <div id="responsive-nav" class="responsive-nav">
+                        <li><a href="#" class="nav-links">Home</a></li>
+                        <li><a href="#" class="nav-links">Services</a></li>
+                        <li><a href="#" class="nav-links">Team</a></li>
+                        <li><a href="#" class="nav-links">Pricing</a></li>
+                        <li><a class="nav-links btn button">Sign up</a></li>
+                    </div>
+                    <li class="menu-toggle">
+                        <div class="hamburger"></div>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -78,7 +82,7 @@
                 <div class="col-md-4">
                     <div class="hero-card hours">
                         <p class="card-title">Opening Hours</p>
-                        <div class="hours-body">
+                        <div class="hero-table">
                             <p>Mon - Fri</p>
                             <p class="lead">08:00 - 20:00</p>
                             <p>Sat - Sun</p>
@@ -95,7 +99,7 @@
             <p class="subtitle text-center">Achieve the best results with our wide variety of training options!</p>
             <div class="row service-cards">
                 <div class="col-md-4">
-                    <div class="service text-center">
+                    <div class="service text-center cardio">
                         <div class="icon-holder">
                             <img src="./assets/img/heart-blue.png" alt="cardio">
                         </div>
@@ -104,7 +108,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="service text-center">
+                    <div class="service text-center yoga">
                         <div class="icon-holder">
                             <img src="./assets/img/guru-blue.png" alt="yoga">
                         </div>
@@ -113,7 +117,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="service text-center">
+                    <div class="service text-center power">
                         <div class="icon-holder">
                             <img src="./assets/img/weight-blue.png" alt="power-training">
                         </div>
@@ -131,7 +135,7 @@
             <p class="text-center subtitle">We're a dream team!</p>
             <div class="row">
                 <div class="team-card col-md-4">
-                    <div class="card">
+                    <div class="card team-1">
                         <img src="./assets/img/team-cover1.jpg" class="card-img-top" alt="Personal-training">
                         <div class="overlay text-center">
                             <h3>N15,000</h3>
@@ -146,7 +150,7 @@
                     </div>
                 </div>
                 <div class="team-card col-md-4">
-                    <div class="card">
+                    <div class="card team-2">
                         <img src="./assets/img/team-cover2.jpg" class="card-img-top" alt="Personal-training">
                         <div class="overlay text-center">
                             <h3>N12,000</h3>
@@ -161,7 +165,7 @@
                     </div>
                 </div>
                 <div class="team-card col-md-4">
-                    <div class="card">
+                    <div class="card team-3">
                         <img src="./assets/img/team-cover3.jpg" class="card-img-top" alt="Personal-training">
                         <div class="overlay text-center">
                             <h3>N15,000</h3>
@@ -183,12 +187,12 @@
         <div class="container">
             <div class="pricing-text text-center">
                 <h2>Pricing</h2>
-                <p class="subtitle">Choose your favorite pricing plan and sign up today!</p>
+                <p>Choose your favorite pricing plan and sign up today!</p>
             </div>
             <div class="row">
-                <div class="col-md-7 blue-price">
+                <div class="col-lg-7 col-md-12 blue-price">
                     <div class="row">
-                        <div class="col-md-6 text-center">
+                        <div class="col-md-6 text-center mb-4 mt-4">
                             <h4>Yoga Pilates</h4>
                             <p>N150,000 / year</p>
                             <button class="button">Sign Up Now</button>
@@ -206,7 +210,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3.5 gray-price text-center">
+                <div class="col-lg-3.5 gray-price text-center">
                     <h4>Cardio Training</h4>
                     <p>N100,000 / year</p>
                     <button type="button" class="button" data-toggle="pop-up" data-target="signUpModal" onclick="popUp()">Sign Up Now</button>
