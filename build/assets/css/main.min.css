@@ -637,6 +637,8 @@ header {
     background-position: center; }
   .hero-cards .schedule {
     background-image: url("../img/table-1.jpg"); }
+    .hero-cards .schedule .text-right {
+      margin-left: auto; }
   .hero-cards .premium {
     background-image: url("../img/table-2.jpg"); }
     .hero-cards .premium p {
@@ -678,7 +680,8 @@ header {
       font-size: 21px; } }
 
 #services {
-  margin: 100px 0; }
+  padding-top: 80px;
+  margin: 20px 0 100px 0; }
   #services .service-cards {
     margin-top: 100px; }
   #services .service {
@@ -706,7 +709,8 @@ header {
       width: 100%; }
 
 #team {
-  margin: 150px 0; }
+  padding-top: 80px;
+  margin: 20px 0 100px 0; }
   #team .team-card {
     margin-top: 80px; }
   #team .card {
@@ -806,8 +810,20 @@ header {
 footer {
   background: url(../img/footer.jpg); }
   footer p {
-    margin: 0;
-    padding: 80px 0;
+    margin-bottom: 24px;
+    padding-top: 50px;
     color: #ffffff;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500; }
+  footer .socialicons {
+    margin: 0;
+    padding-bottom: 50px;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center; }
+    footer .socialicons li a {
+      margin: 16px;
+      color: #e7e0e0; }
+    footer .socialicons li a:hover {
+      color: #31B9FF; }

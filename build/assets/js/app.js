@@ -10,8 +10,13 @@ $(document).ready(function(){
 
     // toggle mobile nav menu
     $('.menu-toggle').click(function(){
-        $('.responsive-nav').toggleClass("unfold");
+        $('.responsive-nav').toggleClass("unfold animated slideInDown");
         $(this).toggleClass("close-menu");
+    });
+
+    $('#responsive-nav, .unfold.nav-links').click(function(){
+        $('.responsive-nav').toggleClass("unfold animated slideInDown");
+        $('.menu-toggle').toggleClass("close-menu");
     });
 
     // change navigation on scroll
@@ -111,7 +116,7 @@ $(document).ready(function(){
     });
 
     // Onepage Nav
-    $('.responsive-nav').onePageNav({
+    $('.responsive-nav, .nav-bar').onePageNav({
         currentClass: 'active',
         changeHash: true,
         scrollSpeed: 600,

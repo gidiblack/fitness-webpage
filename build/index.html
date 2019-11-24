@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/93c48aecb0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/main.min.css"/>
     <title>Fitness Hub</title>
 </head>
@@ -13,10 +15,10 @@
         <nav class="nav-bar container-fluid" id="nav-bar">
             <div class="container">
                 <ul class="main-nav">
-                    <li><a href="#" class="nav-links logo">
+                    <li><a href="#header" class="nav-links logo">
                     </a></li>
                     <div id="responsive-nav" class="responsive-nav">
-                        <li class="active"><a href="#header" class="nav-links">Home</a></li>
+                        <li class="active"><a href="#header" class="nav-links">Intro</a></li>
                         <li><a href="#services" class="nav-links">Services</a></li>
                         <li><a href="#team" class="nav-links">Team</a></li>
                         <li><a href="#pricing" class="nav-links">Pricing</a></li>
@@ -35,7 +37,7 @@
         <div class="container">
         </div>
     </header>
-    <section id="hero" class="scrollspy">
+    <section id="hero">
         <div class="container">
             <div class="hero-cards row">
                 <div class="col-md-4">
@@ -43,26 +45,26 @@
                         <p class="card-title">Today's Schedule</p>
                         <div class="hero-table">
                             <div class="schedule-times row">
-                                <div class="col-sm-6">
+                                <div class="col-xs-6">
                                     <p>Early Exercise</p> 
                                 </div>
-                                <div class="col-sm-6 text-right">
+                                <div class="col-xs-6 text-right">
                                     <p>8:30 - 10:00</p> 
                                 </div>
                             </div>
                             <div class="schedule-times row">
-                                <div class="col-sm-6">
+                                <div class="col-xs-6">
                                     <p>Muscle Building</p> 
                                 </div>
-                                <div class="col-sm-6 text-right">
+                                <div class="col-xs-6 text-right">
                                     <p>10:30 - 12:00</p>
                                 </div>
                             </div>
                             <div class="schedule-times row">
-                                <div class="col-sm-6">
+                                <div class="col-xs-6">
                                     <p>Cardio</p>
                                 </div>
-                                <div class="col-sm-6 text-right">
+                                <div class="col-xs-6 text-right">
                                     <p>14:30 - 16:00</p>
                                 </div>
                             </div>
@@ -93,7 +95,7 @@
             </div>
         </div>
     </section>
-    <section id="services" class="scrollspy">
+    <section id="services">
         <div class="container">
             <h2 class="text-center">Services</h2>
             <p class="subtitle text-center">Achieve the best results with our wide variety of training options!</p>
@@ -129,7 +131,7 @@
         </div>
     </section>
     
-    <section id="team" class="scrollspy">
+    <section id="team">
         <div class="container">
             <h2 class="text-center">Team</h2>
             <p class="text-center subtitle">We're a dream team!</p>
@@ -183,7 +185,7 @@
         </div>
     </section>
 
-    <section id="pricing" class="scrollspy">
+    <section id="pricing">
         <div class="container">
             <div class="pricing-text text-center">
                 <h2>Pricing</h2>
@@ -248,7 +250,7 @@
                   </fieldset>
                   <fieldset class="form-group">
                     <div class="check-field">
-                        <input type="checkbox" id="agreeTerms" name="agreeTerms" value="agreeTerms">
+                        <input type="checkbox" id="agreeTerms" name="agreeTerms" value="agreeTerms" required>
                         <span>I Agree to the <a href="#">Terms & Conditions</a></span>
                     </div>
                   </fieldset>
@@ -263,6 +265,13 @@
     <footer>
         <div class="container">
             <p class="text-center">&copy Gidiblack 2019</p>
+            <ul class="socialicons">
+                <li><a href="https://github.com/gidiblack" target="_blank"><i class="fab fa-github fa-2x"></i></li></a>
+                <li><a href="https://www.linkedin.com/in/gideon-etim-6534a7187" target="_blank"><i class="fab fa-linkedin fa-2x"></i></li></a>
+                <li><a href="https://mobile.twitter.com/tha_gidi" target="_blank"><i class="fab fa-twitter fa-2x"></i></li></a>
+                <li><a href="https://www.instagram.com/tha_gidi" target="_blank"><i class="fab fa-instagram fa-2x"></i></li></a>
+                <li><a href="#"><i class="fab fa-facebook fa-2x"></i></li></a>
+            </ul>
         </div>
     </footer>
 </body>
